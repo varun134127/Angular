@@ -1,0 +1,10 @@
+<table class="table table-hover">
+    <tr *ngFor="let contact of service.list">
+      <td (click)="populateForm(contact)">{{contact.FirstName}}</td>
+      <td (click)="populateForm(contact)">{{contact.LastName}}</td>
+      <td (click)="populateForm(contact)">{{contact.Email}}</td>
+      <td (click)="populateForm(contact)">{{contact.PhoneNumber}}</td>
+      <td (click)="populateForm(contact)">{{contact.Address}}</td>
+      <td><button (click)="onDelete(contact.ContactId??0)" class="btn btn-sm btn-outline-danger">X</button></td>
+    </tr>
+  </table>
